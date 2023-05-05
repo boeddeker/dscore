@@ -1,3 +1,13 @@
+Difference to https://github.com/nryant/dscore
+==============================================
+
+ - Renamed `scorelib/` to `dscore/`
+ - Add `setup.py`, i.e. enable `pip install https://github.com/boeddeker/dscore`
+ - Moved `score.py` to `dscore/__main__.py`
+    - Old call: `cd <path>/dscore && python score.py [options] -r ... -s ...`
+    - New call: `python -m dscore [options] -r ... -s ...`
+
+
 I. Overview
 =========
 This suite supports evaluation of diarization system output relative
