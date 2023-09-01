@@ -16,9 +16,9 @@ from __future__ import unicode_literals
 import argparse
 import sys
 
-from scorelib import __version__ as VERSION
-from scorelib.rttm import validate_rttm
-from scorelib.utils import error, info
+from dscore import __version__ as VERSION
+from dscore.rttm import validate_rttm
+from dscore.utils import error, info
 
 
 if __name__ == '__main__':

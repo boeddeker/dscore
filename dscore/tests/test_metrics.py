@@ -9,11 +9,11 @@ import numpy as np
 from numpy.testing import (assert_almost_equal, assert_equal,
                            assert_raises_regex)
 
-from scorelib.metrics import (bcubed, conditional_entropy, contingency_matrix,
+from dscore.metrics import (bcubed, conditional_entropy, contingency_matrix,
                               der, jer, goodman_kruskal_tau,
                               mutual_information)
-from scorelib.rttm import load_rttm
-from scorelib.score import turns_to_frames
+from dscore.rttm import load_rttm
+from dscore.score import turns_to_frames
 
 
 TEST_DIR = os.path.dirname(os.path.abspath(__file__))

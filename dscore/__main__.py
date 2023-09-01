@@ -55,7 +55,7 @@ would compute DER using a 100 ms collar and with overlapped speech ignored.
 All other metrics are computed off of frame-level labelings generated from the
 reference and system speaker turns **WITHOUT** any use of collars. The default
 frame step is 10 ms, which may be altered via the ``--step`` flag. For more
-details, consult the docstrings within the ``scorelib.metrics`` module.
+details, consult the docstrings within the ``dscore.metrics`` module.
 
 The overall and per-file results will be printed to STDOUT as a table formatted
 using the ``tabulate`` package. Some basic control of the formatting of this
@@ -75,14 +75,14 @@ import sys
 
 from tabulate import tabulate
 
-from scorelib import __version__ as VERSION
-from scorelib.argparse import ArgumentParser
-from scorelib.rttm import load_rttm
-from scorelib.turn import merge_turns, trim_turns
-from scorelib.score import score
-from scorelib.six import iterkeys
-from scorelib.uem import gen_uem, load_uem
-from scorelib.utils import error, info, warn, xor
+from dscore import __version__ as VERSION
+from dscore.argparse import ArgumentParser
+from dscore.rttm import load_rttm
+from dscore.turn import merge_turns, trim_turns
+from dscore.score import score
+from dscore.six import iterkeys
+from dscore.uem import gen_uem, load_uem
+from dscore.utils import error, info, warn, xor
 
 
 class RefRTTMAction(argparse.Action):
