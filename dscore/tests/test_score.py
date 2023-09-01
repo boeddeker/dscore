@@ -7,10 +7,10 @@ import os
 import numpy as np
 from numpy.testing import (assert_almost_equal, assert_equal, assert_raises_regex)
 
-from scorelib.rttm import load_rttm
-from scorelib.score import flatten_labels, score, turns_to_frames, Scores
-from scorelib.turn import Turn
-from scorelib.uem import UEM
+from dscore.rttm import load_rttm
+from dscore.score import flatten_labels, score, turns_to_frames, Scores
+from dscore.turn import Turn
+from dscore.uem import UEM
 
 
 TEST_DIR = os.path.dirname(os.path.abspath(__file__))

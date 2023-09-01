@@ -9,12 +9,12 @@ import tempfile
 from numpy.testing import (assert_equal, assert_raises, assert_raises_regex)
 import pytest
 
-from scorelib.turn import Turn
-from scorelib.uem import gen_uem, load_uem, write_uem, UEM
+from dscore.turn import Turn
+from dscore.uem import gen_uem, load_uem, write_uem, UEM
 
 
 TEST_DIR = os.path.dirname(os.path.abspath(__file__))
-TMP_DIR = tempfile.mkdtemp(prefix="dscore_scorelib_test_uem__")
+TMP_DIR = tempfile.mkdtemp(prefix="dscore_dscore_test_uem__")
 
 
 def test_UEM_input_validation():

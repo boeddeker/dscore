@@ -7,8 +7,8 @@ from intervaltree import Interval, IntervalTree
 
 import pytest
 
-from scorelib.turn import chop_tree, merge_turns, trim_turns, Turn
-from scorelib.uem import UEM
+from dscore.turn import chop_tree, merge_turns, trim_turns, Turn
+from dscore.uem import UEM
 
 
 def test_merge_turns():
